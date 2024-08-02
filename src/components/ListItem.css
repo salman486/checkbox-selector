@@ -1,0 +1,11 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px 15px 8px 22px;
+}
+
+.list-item-text {
+  flex-grow: 1;
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-selector {
+  border-radius: 5px;
+  background-color: #fff;
+  width: 370px;
+  padding: 10px 0px 10px 0px;
+  box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12),
+    0px 0px 4px 0px rgba(20, 20, 20, 0.1);
+}
+
+.btn_wrapper {
+  padding: 8px 15px 8px 22px;
+}
+
+.done-button {
+  background-color: #ffce22;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.done-button:hover {
+  background-color: #ffd84d;
+}
+.done-button:active {
+  background-color: #ffce22;
+}
+
+.seprator {
+  background: #cdcdcd;
+  height: 1px;
+  width: 100%;
+}
+
+.seprator_box {
+  padding: 10px 15px 10px 15px;
+}
+
+input[type="checkbox"] {
+  width: 23px;
+  height: 23px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0.1rem;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+  border-color: #bdbdbd;
+  outline: 3px solid #2469f61a;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+input[type="checkbox"]:hover::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 17 13" fill="none"><path d="M0.68 6.592L6.22879 11.5272C6.24925 11.5454 6.28055 11.5437 6.29899 11.5235L16.32 0.520004" stroke="gray" stroke-linecap="round"/></svg>')
+    no-repeat center center;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #2469f6;
+  border-color: #2469f6;
+  outline: 3px solid #2469f61a;
+}
+
+input[type="checkbox"]:checked::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 17 13" fill="none"><path d="M0.68 6.592L6.22879 11.5272C6.24925 11.5454 6.28055 11.5437 6.29899 11.5235L16.32 0.520004" stroke="white" stroke-linecap="round"/></svg>')
+    no-repeat center center;
+}
